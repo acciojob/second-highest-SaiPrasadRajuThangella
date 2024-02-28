@@ -9,7 +9,22 @@
 <body>	
 	<script>
 		function secondHighest(arr) {
-			//Write your code here
+			let a=vrr[0];//5
+    let b=vrr[1];//1
+
+    for(let i=2;i<vrr.length;i++){
+        let currentmax= a>b?a:b; //5
+        let currentmin= a<b?a:b; //1
+
+        if(currentmin< vrr[i]){
+            b=vrr[i]
+            a= currentmax
+        }
+
+    
+    }
+    return(a<b?a:b);
+    
 			
 		}
 
